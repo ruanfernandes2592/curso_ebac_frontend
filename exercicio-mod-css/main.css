@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: #322938;
+    padding: 16px 0;
+    color: #cfc89a;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sports {
+    background-color: #699c5d;
+}
+#sports .articles article a {
+    background-color: #322938;
+}
+
+#economy {
+    background-color: #91be7e;
+}
+#economy .articles article a {
+    background-color: #4b501f;
+}
+
+#entertainment {
+    background-color: #c2dfac;
+}
+#entertainment .articles article a {
+background-color: #2e7d22;
+}
+
+#technology {
+    background-color: #f3ffda;
+}
+#technology .articles article a {
+background-color: #1b1b1b;
+}
+
+header li {
+    display: inline;
+
+}
+
+header li a {
+    color: #cfc89a;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 1266px;
+    margin: 0 auto 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px;
+}
+
+section h2, .articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: #89a194;
+    color: #cfc89a;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
