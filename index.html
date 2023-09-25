@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <title>Formulrio html-js</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário HTML / JS</h1>
+        <h2>Exercício</h2>
+        <h4>O formulário será válido apenas se: <i><U>Valor A</U></i> for menor que <i><U>Valor B</U></i></h4>
+        <form id="exp-form">
+            <h3>Valor A</h3>
+            <input type="number" id="v-A" placeholder="Digite um número" required>
+            <h3>Valor B</h3>
+            <input type="number" id="v-B" placeholder="Digite um número" required>
+            <button type="submit" id="vrfc" onclick="validaForm()"><b>VALIDAR</b></button><br />
+            <p class="msg-valida">Aguardando...</p>
+            <p class="msg-erro">Aguardando...</p>
+        </form>
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>
