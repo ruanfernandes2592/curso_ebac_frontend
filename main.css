@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color: #71796f;
+    font-family: Roboto, sans-serif;
+}
+
+form {
+    text-align: center;
+}
+
+form input {
+    background-color: #dbe0d9;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    width: 400px;
+}
+
+form button {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #dbe0d9;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+}
+
+li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    font-family: 'Bebas Neue', sans-serif;
+}   
+
+.tarefaList {
+    padding: 12px;
+    background-color: #71796f;
+}
+
+#container {
+    background: #697566;
+    padding: 12px;
+    width: 80%;
+    margin: 16px auto;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.item-completado {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+margin: 48px;
+}
+
+footer li {
+    font-size: 12px;
+}
