@@ -1,0 +1,129 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(5, 92, 41), rgb(18, 49, 63));
+}
+
+p {
+    margin-left: 16px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container {
+    position: absolute; /* Para ocupar apenas o espaço do container */
+    top: 50%; /* Para centralizar o container(Formulario) */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    padding: 6px;
+    padding-bottom: 0;
+    color: #fff;
+    box-shadow: 5px 5px 5px rgba(6, 25, 27, 0.582);
+}
+
+fieldset { /* Contorno */
+    border: 3px solid rgba(118, 240, 37, 0.2);
+    border-radius: 8px;
+}
+
+legend {
+    padding: 8px;
+    background-color: rgba(118, 240, 37, 0.3);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputBox {
+    padding: 12px;
+    position: relative;
+    max-width: 320px;
+    min-width: 320px;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffffff8c;
+    outline: none; /* Para retirar o focus do input */
+    color: #fff;
+    box-sizing: 10px;
+    width: 100%;
+    letter-spacing: 1px; /* Espaçamento entre caracteres */
+}
+
+.labelInput { /* Animação */
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Qualquer ponto dentro do input ativa a animação */
+    transition: .5s;
+    font-size: medium;
+}
+
+.inputUser:focus ~ .labelInput, /* Se o input estiver em focus ~ .labelInput será ativada */
+.inputUser:valid ~ .labelInput { /* Se o input estiver preenchido(valid) ~ .labelInput permanecerá valid */
+    top: -4px;
+    font-size: 12px;
+    color: rgba(118, 240, 37, 0.5);
+}
+
+#bairro,
+#numero {
+    float: left;
+    padding: 8px;
+}
+
+#numero {
+    width: 60px;
+    margin-left: 6px;
+}
+
+#bairro{
+    width: 150px;
+}
+
+#complemento {
+    padding: 8px;
+    width: 232px;
+}
+
+#data_nascimento {
+    border: none;
+    padding: 6px;
+    border-radius: 10px;
+    outline: none; /* Para retirar o focus do input */
+}
+
+#submit {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    border: none;
+    padding: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#submit:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    font-size: 12px;
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 12px;
+    display: flex;
+    justify-content: space-between;
+}
